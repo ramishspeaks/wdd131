@@ -7,7 +7,7 @@ const list = document.querySelector('#list');
 
 button.addEventListener('click', function () {
 
-    if (input.value !== '') {
+    if (input.value.trim() !== '') {
 
         const li = document.createElement('li');
 
@@ -27,13 +27,18 @@ button.addEventListener('click', function () {
 
 
         deleteButton.addEventListener('click', function () {
+
             list.removeChild(li);
+
+            input.focus();
+
         });
 
 
         input.value = '';
 
         input.focus();
+
     }
 
 });
