@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+}
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: none;
+}
+
+.navigation.open a {
+    display: block;
+}
+
+.navigation a:hover {
+    background-color: #555;
+}
+
+.active {
+    background-color: #0066cc;
+    border-radius: 5px;
+}
