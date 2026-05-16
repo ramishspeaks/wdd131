@@ -1,90 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>WDD 131 – Dynamic Web Fundamentals – Ramish Lal Khokhar</title>
+    <title>
+        WDD 131 – Dynamic Web Fundamentals – Ramish Lal Khokhar
+    </title>
 
-    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Home page by Ramish Lal Khokhar using HTML, CSS, and JavaScript.">
+    <meta
+        name="description"
+        content="WDD 131 – Dynamic Web Fundamentals home page by Ramish Lal Khokhar using HTML, CSS, and JavaScript."
+    >
 
-    <meta name="author" content="Ramish Lal Khokhar">
+    <meta
+        name="author"
+        content="Ramish Lal Khokhar"
+    >
 
-    <!-- Google Fonts -->
+    <!-- GOOGLE FONTS -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- CSS -->
+
     <link rel="stylesheet" href="styles/base.css">
 
-    <!-- JavaScript -->
+    <!-- JAVASCRIPT -->
+
     <script src="scripts/getdates.js" defer></script>
+
 </head>
 
 <body>
 
+    <!-- HEADER -->
+
     <header>
+
         <span id="course-title">
-            WDD 131 – Dynamic Web Fundamentals
+            WDD 131: Dynamic Web Fundamentals
         </span>
 
         <nav>
-            <a href="https://www.linkedin.com/in/ramish-a-8a17231aa/" target="_blank">linkedin</a>
-            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">
+
+            <a
+                href="https://www.linkedin.com/in/ramish-a-8a17231aa/"
+                target="_blank"
+            >
+                LinkedIn
+            </a>
+
+            <a
+                href="https://byupw.instructure.com/"
+                target="_blank"
+            >
+                I-Learn
+            </a>
+
+            <a
+                href="https://www.churchofjesuschrist.org/study/scriptures"
+                target="_blank"
+            >
                 Scripture
             </a>
 
-            <a href="#">Final Project</a>
+            <a href="#">
+                Final Project
+            </a>
+
         </nav>
+
     </header>
 
+    <!-- MAIN -->
+
     <main>
+
         <h1>Ramish Lal Khokhar</h1>
 
-        <!-- ABOUT ME -->
+        <div class="main-grid">
 
-        <section class="card">
-            <h2>About Me</h2>
+            <!-- ABOUT CARD -->
 
-            <div class="card-content">
-                <img src="images/ramish.jpeg" alt="Ramish Lal Khokhar">
+            <section class="card about-card">
 
-                <p>
-                    My name is Ramish Lal Khokhar. I am learning web
-                    development and improving my HTML, CSS, and JavaScript
-                    skills. I enjoy technology, programming, and building
-                    modern websites.
-                </p>
-            </div>
-        </section>
+                <h2>About Me</h2>
 
-        <!-- PAKISTAN -->
+                <div class="about-content">
 
-        <section class="card">
-            <h2>Pakistan</h2>
+                    <div class="about-text">
 
-            <div class="card-content">
-                <img src="images/pakistanflag.jpeg" alt="Pakistan Flag">
+                        <p>
+                            My name is Ramish Lal Khokhar. I am learning web
+                            development and improving my HTML, CSS, and
+                            JavaScript skills. I enjoy programming,
+                            technology, and building modern websites.
+                        </p>
 
-                <p>
-                    Pakistan is a beautiful country with rich culture,
-                    history, mountains, rivers, and amazing landscapes.
-                    It is known for its hospitality and diversity.
-                </p>
-            </div>
-        </section>
+                    </div>
+
+                    <img
+                        src="images/ramish.jpeg"
+                        alt="Ramish Lal Khokhar"
+                    >
+
+                </div>
+
+                <!-- COUNTRY SECTION -->
+
+                <h3>Pakistan</h3>
+
+                <div class="country-content">
+
+                    <figure>
+
+                        <img
+                            src="images/pakistanflag.jpeg"
+                            alt="Official Flag of Pakistan"
+                        >
+
+                        <figcaption>
+                            Official Flag of Pakistan
+                        </figcaption>
+
+                    </figure>
+
+                    <p>
+                        Pakistan is a beautiful country with rich culture,
+                        mountains, rivers, and amazing landscapes.
+                        It is known for hospitality, diversity,
+                        and historical places.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <!-- RESOURCES CARD -->
+
+            <section class="card resources-card">
+
+                <h2>Web Dev Resources</h2>
+
+                <ul>
+
+                    <li>
+                        <a
+                            href="https://developer.mozilla.org/"
+                            target="_blank"
+                        >
+                            MDN Web Docs
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://css-tricks.com/"
+                            target="_blank"
+                        >
+                            CSS Tricks
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://www.w3schools.com/"
+                            target="_blank"
+                        >
+                            W3 Schools
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://stackoverflow.com/"
+                            target="_blank"
+                        >
+                            Stack Overflow
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://github.com/"
+                            target="_blank"
+                        >
+                            GitHub
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </div>
 
     </main>
 
+    <!-- FOOTER -->
+
     <footer>
+
         <p>
             &copy;
             <span id="currentyear"></span>
-            Ramish Lal Khokhar | Pakistan
+
+            🌸 Ramish Lal Khokhar 🌸 Pakistan
         </p>
 
         <p id="lastModified"></p>
+
     </footer>
 
 </body>
