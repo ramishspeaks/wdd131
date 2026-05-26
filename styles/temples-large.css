@@ -6,16 +6,28 @@
         display: none;
     }
 
+    /* HEADER */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+    }
+
     /* NAVIGATION */
 
     nav {
-        display: flex !important;
+        display: flex;
         flex-direction: row;
-        justify-content: center;
         gap: 2rem;
     }
 
-    /* GALLERY GRID */
+    /* GALLERY */
 
     .gallery {
         grid-template-columns: repeat(3, 1fr);
