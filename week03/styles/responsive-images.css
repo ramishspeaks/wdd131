@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
