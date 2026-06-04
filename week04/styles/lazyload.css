@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    padding: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+
+    animation: fadein 2s ease-in-out;
+}
+
+footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #222;
+    color: white;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        filter: brightness(0%);
+    }
+
+    to {
+        opacity: 1;
+        filter: brightness(100%);
+    }
+}
