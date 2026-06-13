@@ -6,7 +6,7 @@
 
     <title>Product Review Form</title>
 
-    <meta name="description" content="Submit a product review and rating for selected products.">
+    <meta name="description" content="Submit a product review and rating for selected products using this product review form.">
     <meta name="author" content="Ramish Lal Khokhar">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,33 +46,62 @@
             <fieldset>
                 <legend>Overall Rating *</legend>
 
-                <label>
-                    <input type="radio" name="rating" value="1" required>
-                    ☆
-                </label>
+                <div class="rating-group">
 
-                <label>
-                    <input type="radio" name="rating" value="2">
-                    ☆☆
-                </label>
+                    <label for="rating1">
+                        ☆
+                        <input
+                            type="radio"
+                            id="rating1"
+                            name="rating"
+                            value="1"
+                            required>
+                    </label>
 
-                <label>
-                    <input type="radio" name="rating" value="3">
-                    ☆☆☆
-                </label>
+                    <label for="rating2">
+                        ☆☆
+                        <input
+                            type="radio"
+                            id="rating2"
+                            name="rating"
+                            value="2"
+                            required>
+                    </label>
 
-                <label>
-                    <input type="radio" name="rating" value="4">
-                    ☆☆☆☆
-                </label>
+                    <label for="rating3">
+                        ☆☆☆
+                        <input
+                            type="radio"
+                            id="rating3"
+                            name="rating"
+                            value="3"
+                            required>
+                    </label>
 
-                <label>
-                    <input type="radio" name="rating" value="5">
-                    ☆☆☆☆☆
-                </label>
+                    <label for="rating4">
+                        ☆☆☆☆
+                        <input
+                            type="radio"
+                            id="rating4"
+                            name="rating"
+                            value="4"
+                            required>
+                    </label>
+
+                    <label for="rating5">
+                        ☆☆☆☆☆
+                        <input
+                            type="radio"
+                            id="rating5"
+                            name="rating"
+                            value="5"
+                            required>
+                    </label>
+
+                </div>
             </fieldset>
 
-            <!-- Date -->
+            <!-- Date of Installation -->
 
             <div class="form-group">
                 <label for="installDate">
@@ -86,56 +115,49 @@
                     required>
             </div>
 
-            <!-- Features -->
+            <!-- Useful Features -->
 
             <fieldset>
                 <legend>
                     Useful Features
+                    <br>
                     <span>(Check all that apply)</span>
                 </legend>
 
-                <label>
+                <div class="checkbox-group">
+
                     <input
                         type="checkbox"
                         id="durability"
                         name="features"
                         value="Durability">
+                    <label for="durability">Durability</label>
 
-                    Durability
-                </label>
-
-                <label>
                     <input
                         type="checkbox"
                         id="ease"
                         name="features"
                         value="Ease of Use">
+                    <label for="ease">Ease of Use</label>
 
-                    Ease of Use
-                </label>
-
-                <label>
                     <input
                         type="checkbox"
                         id="performance"
                         name="features"
                         value="Performance">
+                    <label for="performance">Performance</label>
 
-                    Performance
-                </label>
-
-                <label>
                     <input
                         type="checkbox"
                         id="design"
                         name="features"
                         value="Design">
+                    <label for="design">Design</label>
 
-                    Design
-                </label>
+                </div>
             </fieldset>
 
-            <!-- Review -->
+            <!-- Written Review -->
 
             <div class="form-group">
                 <label for="review">
@@ -161,7 +183,7 @@
                     name="username">
             </div>
 
-            <!-- Submit -->
+            <!-- Submit Button -->
 
             <input
                 type="submit"
