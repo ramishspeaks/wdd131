@@ -1,0 +1,848 @@
+/* -------------------- */
+/* RESET */
+/* -------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #006400;
+    --secondary: #f5f5f5;
+    --accent: #ffd700;
+    --dark: #222;
+    --white: #ffffff;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--secondary);
+    color: var(--dark);
+    line-height: 1.7;
+}
+
+/* -------------------- */
+/* HEADER */
+/* -------------------- */
+
+header {
+    background: var(--primary);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* -------------------- */
+/* NAVIGATION */
+/* -------------------- */
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    list-style: none;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: white;
+    color: var(--primary);
+}
+
+/* -------------------- */
+/* MAIN */
+/* -------------------- */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+/* -------------------- */
+/* HERO */
+/* -------------------- */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.hero img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 40px;
+    color: white;
+    background: rgba(0,0,0,.45);
+}
+
+.hero-text h2 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+/* -------------------- */
+/* BUTTONS */
+/* -------------------- */
+
+.btn,
+button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover,
+button:hover {
+    background: #008000;
+    transform: translateY(-3px);
+}
+
+/* -------------------- */
+/* PAGE BANNER */
+/* -------------------- */
+
+.page-banner {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-banner h2 {
+    color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.page-banner p {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* -------------------- */
+/* ABOUT */
+/* -------------------- */
+
+.about {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.1);
+}
+
+.about h2 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+/* -------------------- */
+/* STATISTICS */
+/* -------------------- */
+
+.statistics {
+    margin: 40px 0;
+}
+
+.statistics h2 {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 25px;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    background: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(0,0,0,.1);
+}
+
+.stat-card h3 {
+    color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+/* ============================= */
+/* FEATURED DESTINATION CARDS */
+/* ============================= */
+
+.cards,
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.card,
+.destination-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 18px rgba(0,0,0,.12);
+    transition: all .3s ease;
+}
+
+.card:hover,
+.destination-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 30px rgba(0,0,0,.20);
+
+}
+
+.card img,
+.destination-card img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+.card h3,
+.destination-card h3 {
+
+    color: var(--primary);
+
+    padding: 15px 20px 10px;
+
+}
+
+.card p,
+.destination-card p {
+
+    padding: 0 20px 20px;
+
+}
+
+/* ============================= */
+/* FILTER BUTTONS */
+/* ============================= */
+
+.filter-section {
+
+    text-align: center;
+
+    margin: 40px 0;
+
+}
+
+.filter-section h3 {
+
+    color: var(--primary);
+
+    margin-bottom: 20px;
+
+}
+
+.filter-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+
+.filter-buttons button {
+
+    min-width: 170px;
+
+}
+
+/* ============================= */
+/* TRAVEL INFO */
+/* ============================= */
+
+.travel-info {
+
+    margin-top: 60px;
+
+}
+
+.travel-info h2 {
+
+    text-align: center;
+
+    color: var(--primary);
+
+    margin-bottom: 30px;
+
+}
+
+.travel-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+    gap: 25px;
+
+}
+
+.travel-grid article {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.travel-grid h3 {
+
+    color: var(--primary);
+
+    margin-bottom: 15px;
+
+}
+
+/* ============================= */
+/* TRAVEL TIPS */
+/* ============================= */
+
+.tips {
+
+    margin: 50px 0;
+
+}
+
+.tips h2 {
+
+    color: var(--primary);
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+}
+
+.tips ul {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.tips li {
+
+    margin: 15px 0;
+
+    list-style: none;
+
+}
+
+/* ============================= */
+/* CALL TO ACTION */
+/* ============================= */
+
+.cta {
+
+    text-align: center;
+
+    background: var(--primary);
+
+    color: white;
+
+    padding: 50px 30px;
+
+    border-radius: 10px;
+
+    margin: 60px 0;
+
+}
+
+.cta h2 {
+
+    margin-bottom: 15px;
+
+}
+
+.cta p {
+
+    margin-bottom: 25px;
+
+}
+
+.cta .btn {
+
+    background: white;
+
+    color: var(--primary);
+
+}
+
+.cta .btn:hover {
+
+    background: var(--accent);
+
+    color: black;
+
+}
+
+/* ============================= */
+/* CONTACT PAGE */
+/* ============================= */
+
+.contact-container {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+
+    margin: 40px 0;
+
+}
+
+.contact-info {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.contact-info h2 {
+
+    color: var(--primary);
+
+    margin-bottom: 20px;
+
+}
+
+.contact-info ul {
+
+    margin-top: 20px;
+
+}
+
+.contact-info li {
+
+    margin-bottom: 12px;
+
+    list-style: none;
+
+}
+
+.contact-form {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+
+}
+
+/* ============================= */
+/* FORM */
+/* ============================= */
+
+.form-group {
+
+    margin-bottom: 20px;
+
+}
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+
+}
+
+input,
+select,
+textarea {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    font-family: inherit;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    border: 2px solid var(--primary);
+
+    outline: none;
+
+}
+
+textarea {
+
+    resize: vertical;
+
+}
+
+#savedMessage {
+
+    margin-top: 25px;
+
+    background: #e9ffe9;
+
+    border-left: 6px solid var(--primary);
+
+    padding: 15px;
+
+    border-radius: 6px;
+
+    font-weight: 600;
+
+}
+
+.travel-help {
+
+    text-align: center;
+
+    margin-top: 50px;
+
+}
+
+.travel-help h2 {
+
+    color: var(--primary);
+
+    margin-bottom: 15px;
+
+}
+/* ========================================= */
+/* FOOTER */
+/* ========================================= */
+
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: var(--accent);
+}
+
+/* ========================================= */
+/* REFERENCES PAGE */
+/* ========================================= */
+
+.references {
+    background: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.10);
+    margin-top: 30px;
+}
+
+.references h2 {
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.references ul {
+    padding-left: 20px;
+}
+
+.references li {
+    margin-bottom: 12px;
+}
+
+.references a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.references a:hover {
+    text-decoration: underline;
+}
+
+/* ========================================= */
+/* SIMPLE ANIMATIONS */
+/* ========================================= */
+
+.hero,
+.card,
+.destination-card,
+.stat-card,
+.travel-grid article,
+.contact-info,
+.contact-form,
+.references {
+
+    animation: fadeIn .8s ease-in-out;
+
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* ========================================= */
+/* IMAGE EFFECTS */
+/* ========================================= */
+
+img {
+    transition: .3s;
+}
+
+.card img:hover,
+.destination-card img:hover,
+.hero img:hover {
+
+    transform: scale(1.03);
+
+}
+
+/* ========================================= */
+/* LINKS */
+/* ========================================= */
+
+a {
+
+    transition: .3s;
+
+}
+
+/* ========================================= */
+/* MOBILE */
+/* ========================================= */
+
+@media (max-width:768px) {
+
+    .navigation {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 12px;
+
+    }
+
+    .hero img {
+
+        height: 300px;
+
+    }
+
+    .hero-text {
+
+        position: static;
+
+        background: var(--primary);
+
+        padding: 25px;
+
+    }
+
+    .hero-text h2 {
+
+        font-size: 1.8rem;
+
+    }
+
+    .hero-text p {
+
+        font-size: .95rem;
+
+    }
+
+    .stats-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .destination-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .travel-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .contact-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .filter-buttons {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    .filter-buttons button {
+
+        width: 100%;
+
+        max-width: 280px;
+
+    }
+
+}
+
+/* ========================================= */
+/* LARGE SCREENS */
+/* ========================================= */
+
+@media (min-width:1200px) {
+
+    main {
+
+        max-width: 1300px;
+
+    }
+
+    .hero img {
+
+        height: 650px;
+
+    }
+
+    .hero-text h2 {
+
+        font-size: 3rem;
+
+    }
+
+}
+
+/* ========================================= */
+/* SELECTION COLOR */
+/* ========================================= */
+
+::selection {
+
+    background: var(--primary);
+
+    color: white;
+
+}
+
+/* ========================================= */
+/* SMOOTH SCROLL */
+/* ========================================= */
+
+html {
+
+    scroll-behavior: smooth;
+
+}
